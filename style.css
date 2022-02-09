@@ -1,0 +1,160 @@
+/* Imports */
+@import url("https://use.typekit.net/cgv4asz.css");
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --darkblue: #5f85fc;
+  --oceanblue: #7ac2cd;
+  --lightgreen: #8efe9f;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--white);
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font: 26px "proxima-nova";
+  font-weight: 700;
+  /* letter-spacing: ; */
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px 0;
+}
+
+h2 {
+  font: 18px "proxima-nova";
+  font-weight: 700;
+  /* letter-spacing: ; */
+}
+
+h3 {
+  font: 18px "mixta-didone-alt";
+  font-weight: 900;
+  /* letter-spacing: ; */
+  text-transform: uppercase;
+  margin: 10px auto;
+}
+
+p {
+  font: 18px "proxima-nova";
+  font-weight: 400;
+  /* letter-spacing: ; */
+}
+
+a {
+  font: 18px "proxima-nova";
+  font-weight: 700;
+  /* letter-spacing: ; */
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+hr {
+  border: 0.5px solid var(--black);
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* Navigation */
+.menu ul {
+  display: none;
+}
+
+nav {
+  background: var(--white);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+nav a:nth-child(1) {
+  color: var(--black);
+  font: 18px "mixta-didone-alt";
+  letter-spacing: 0.5px;
+  text-transform: initial;
+}
+
+.menu a {
+  color: var(--darkblue);
+}
+
+.nav-black-links a {
+  color: var(--black);
+  text-transform: initial;
+}
+
+/* Footer */
+footer {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+footer p:first-of-type {
+  margin: 30px 0 0 0;
+}
+
+footer p:nth-child(3) {
+  /* text-transform: uppercase; */
+  margin-bottom: 30px;
+}
+
+footer p:nth-child(12) {
+  /* text-transform: uppercase; */
+  margin-bottom: 30px;
+}
+
+footer :last-child {
+  padding-bottom: 50px;
+}
+
+/* Home page */
+header {
+  background: url(images/atom-frontpage-william-bout-264826-downsized.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  background: rgba(171, 242, 239, 0.5);
+  width: 90%;
+}
+
+.header-text h1 {
+  padding: 100px 0;
+  transform: rotate(352deg);
+  text-transform: none;
+  text-align: initial;
+}
+
+.home-exhibitions {
+  display: inline-block;
+}
+
+.home-exhibitions img {
+  width: 343px;
+  height: 190px;
+}
+
+.home-exhibitions p {
+  margin: 10px 0 20px;
+}
