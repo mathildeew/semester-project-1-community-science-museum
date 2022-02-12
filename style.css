@@ -87,7 +87,7 @@ hr {
 header {
   background: var(--white);
   width: 100vw;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -122,7 +122,7 @@ nav {
   position: absolute;
   right: -100vw;
   top: 0;
-  margin-top: 49px;
+  margin-top: 59px;
   z-index: 1000;
   transition: right 0.2s ease-in-out;
 }
