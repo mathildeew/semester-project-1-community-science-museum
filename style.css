@@ -21,7 +21,7 @@ body {
 
 main {
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 li {
@@ -56,6 +56,11 @@ p {
   font: 18px "proxima-nova";
   font-weight: 400;
   /* letter-spacing: ; */
+  /* line-height: ; */
+}
+
+p:not(footer p) {
+  margin-bottom: 30px;
 }
 
 a {
@@ -73,16 +78,13 @@ hr {
 }
 
 /* Navigation */
-.menu ul {
-  display: none;
-}
-
 nav {
   background: var(--white);
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 nav :first-child {
@@ -92,12 +94,32 @@ nav :first-child {
   text-transform: initial;
 }
 
-nav a:nth-child(1) {
-  margin-left: 15px;
+.menu-button img,
+.close-button img {
+  width: 50%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.menu {
+  background: var(--white);
+  transition: all 0.5s ease-in;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  visibility: hidden;
+}
+
+.menu:target {
+  visibility: visible;
 }
 
 .menu a {
   color: var(--darkblue);
+  border: 1px solid red;
+  margin-left: 35px;
 }
 
 .nav-black-links a {
@@ -132,23 +154,37 @@ header {
   background: url(images/atom-frontpage-william-bout-264826-downsized.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 1px;
   width: 100%;
   height: 515px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .header-text {
   background: rgba(171, 242, 239, 0.5);
   width: 90%;
+  margin: auto;
 }
 
 .header-text h1 {
-  padding: 100px 0;
   transform: rotate(352deg);
   text-transform: none;
-  text-align: initial;
+  text-align: center;
+  padding: 100px 0;
+  margin: auto;
+}
+
+button {
+  background: var(--darkblue);
+  box-shadow: -3px 3px 0 3px rgba(95, 133, 252, 0.5);
+  border: none;
+  padding: 5px 10px;
+  margin: auto;
+}
+
+button a {
+  color: var(--black);
 }
 
 .home-exhibitions {
@@ -167,3 +203,22 @@ header {
 .home-exhibitions a {
   color: var(--darkblue);
 }
+
+.nav-green {
+  background-color: var(--lightgreen);
+}
+
+/* Pictures */
+
+.for-kids-img {
+  background: url("images/samuel-zeller-158996-downsized-1800.jpg") no-repeat;
+}
+
+.visit-us-info img,
+.explore-content img {
+  width: 343px;
+  height: 295px;
+  margin-bottom: 30px;
+}
+
+/* Visit Us */
