@@ -127,6 +127,10 @@ nav {
   transition: right 0.2s ease-in-out;
 }
 
+.nav-green {
+  background-color: var(--lightgreen);
+}
+
 nav ul {
   margin-top: 50px;
 }
@@ -264,10 +268,6 @@ button a {
   color: var(--darkblue);
 }
 
-.nav-green {
-  background-color: var(--lightgreen);
-}
-
 /* Pictures */
 
 .for-kids-img {
@@ -305,4 +305,20 @@ button a {
 /* About us  */
 .about-us-contact p:nth-child(4) {
   margin-bottom: 30px;
+}
+
+/* Exhibitions */
+.bottom-navigationbar {
+  color: var(--white);
+  background: var(--oceanblue);
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  position: sticky;
+  bottom: 0;
+}
+
+.bottom-navigationbar h2 {
+  font-size: 18.66px;
 }
