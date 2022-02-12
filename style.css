@@ -21,7 +21,7 @@ body {
 
 main {
   width: 90%;
-  margin: auto;
+  margin: 30px auto 50px;
 }
 
 li {
@@ -42,6 +42,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   /* letter-spacing: ; */
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -59,7 +60,7 @@ p {
   /* line-height: ; */
 }
 
-p:not(footer p) {
+p:not(.no-bottom-margin p) {
   margin-bottom: 30px;
 }
 
@@ -212,13 +213,37 @@ button a {
 
 .for-kids-img {
   background: url("images/samuel-zeller-158996-downsized-1800.jpg") no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.for-teachers-img {
+  background: url("images/bee-naturalles-IRM9qgZdlW0-unsplash-2692-downsized.jpg") no-repeat;
+}
+
+.for-researchers-img {
+  background: url("images/misael-moreno-Rl9bIWKCVF0-unsplash-2700-downsized.jpg") no-repeat;
+}
+
+.get-involved-img {
+  background: url("images/markus-spiske-197281-downsized-2258.jpg") no-repeat;
+  background-position: center;
 }
 
 .visit-us-info img,
-.explore-content img {
+.about-us-content img,
+.for-kids-img,
+.for-teachers-img,
+.for-researchers-img,
+.get-involved-img {
+  background-size: cover;
   width: 343px;
   height: 295px;
   margin-bottom: 30px;
 }
 
 /* Visit Us */
+/* About us  */
+.about-us-contact p:nth-child(4) {
+  margin-bottom: 30px;
+}
