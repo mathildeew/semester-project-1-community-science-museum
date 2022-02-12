@@ -94,6 +94,10 @@ header {
   justify-content: space-evenly;
 }
 
+.header-green {
+  background-color: var(--lightgreen);
+}
+
 .hamburger span {
   height: 3px;
   width: 30px;
@@ -115,15 +119,21 @@ nav {
   background: var(--white);
   width: 100vw;
   height: 100%;
+  visibility: hidden;
   position: absolute;
   right: -100vw;
   top: 0;
-  margin-top: 50px;
+  margin-top: 49px;
   z-index: 1000;
   transition: right 0.2s ease-in-out;
 }
 
-nav a {
+nav ul {
+  margin-top: 50px;
+}
+
+nav a,
+nav p {
   color: var(--darkblue);
   margin-left: 35px;
   padding: 5px;
@@ -136,6 +146,10 @@ nav li {
 .nav-black-links a {
   color: var(--black);
   text-transform: initial;
+}
+
+nav a:active {
+  color: inherit;
 }
 
 nav a:hover {
@@ -152,6 +166,7 @@ nav a:hover {
 
 #trigger:checked ~ nav {
   right: 0;
+  visibility: visible;
 }
 
 #trigger:checked ~ .hamburger span:first-child {
@@ -168,14 +183,15 @@ nav a:hover {
   opacity: 0;
 }
 
-header a {
-  border: 1px solid red;
-}
-
 /* Footer */
 footer {
   color: var(--white);
   background-color: var(--black);
+}
+
+.footer-content {
+  width: 90%;
+  margin: 0 auto;
 }
 
 footer p:first-of-type {
