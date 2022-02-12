@@ -12,6 +12,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,7 +38,8 @@ h1 {
   margin: 30px 0;
 }
 
-h2 {
+h2,
+h4 {
   font: 18px "proxima-nova";
   font-weight: 700;
   text-transform: uppercase;
@@ -51,6 +53,10 @@ h3 {
   /* letter-spacing: ; */
   text-transform: uppercase;
   margin: 10px auto;
+}
+
+h4 {
+  color: var(--darkblue);
 }
 
 p {
@@ -79,53 +85,91 @@ hr {
 }
 
 /* Navigation */
-nav {
+header {
   background: var(--white);
-  width: 100%;
+  width: 100vw;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-nav :first-child {
+.hamburger span {
+  height: 3px;
+  width: 30px;
+  background: var(--black);
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.logo {
   color: var(--black);
   font: 18px "mixta-didone-alt";
   letter-spacing: 0.5px;
   text-transform: initial;
 }
 
-.menu-button img,
-.close-button img {
-  width: 50%;
-  height: auto;
-  transition: all 0.3s;
-}
-
-.menu {
+nav {
   background: var(--white);
-  transition: all 0.5s ease-in;
-  position: fixed;
-  width: 100%;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  right: -100vw;
   top: 0;
-  bottom: 0;
+  margin-top: 50px;
   z-index: 1000;
-  visibility: hidden;
+  transition: right 0.2s ease-in-out;
 }
 
-.menu:target {
-  visibility: visible;
-}
-
-.menu a {
+nav a {
   color: var(--darkblue);
-  border: 1px solid red;
   margin-left: 35px;
+  padding: 5px;
+}
+
+nav li {
+  margin-bottom: 20px;
 }
 
 .nav-black-links a {
   color: var(--black);
   text-transform: initial;
+}
+
+nav a:hover {
+  color: var(--black);
+}
+
+.nav-black-links a:hover {
+  color: var(--darkblue);
+}
+
+#trigger {
+  display: none;
+}
+
+#trigger:checked ~ nav {
+  right: 0;
+}
+
+#trigger:checked ~ .hamburger span:first-child {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+#trigger:checked ~ .hamburger span:last-child {
+  transform: rotate(-45deg);
+  top: -8px;
+}
+
+#trigger:checked ~ .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+header a {
+  border: 1px solid red;
 }
 
 /* Footer */
@@ -151,7 +195,7 @@ footer :last-child {
 }
 
 /* Home page */
-header {
+.welcome {
   background: url(images/atom-frontpage-william-bout-264826-downsized.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -162,13 +206,13 @@ header {
   flex-direction: column;
 }
 
-.header-text {
+.welcome-text {
   background: rgba(171, 242, 239, 0.5);
   width: 90%;
   margin: auto;
 }
 
-.header-text h1 {
+.welcome-text h1 {
   transform: rotate(352deg);
   text-transform: none;
   text-align: center;
