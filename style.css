@@ -257,6 +257,11 @@ footer :last-child {
   display: block;
 }
 
+.exhibition-content img {
+  width: 343px;
+  height: auto;
+}
+
 /* MAIN STYLE FOR ALL PAGES */
 
 /* HOME PAGE STYLE ---------- */
