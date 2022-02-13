@@ -14,7 +14,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
 }
 
 body {
@@ -124,6 +123,7 @@ nav {
   top: 0;
   z-index: 1000;
   transition: right 0.2s ease-in-out;
+  overflow-y: hidden;
 }
 
 .nav-green {
