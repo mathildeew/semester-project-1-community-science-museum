@@ -307,11 +307,52 @@ button a {
   color: var(--darkblue);
 }
 
+.home-whats-happening h2,
+.home-whats-happening p,
+.home-whats-happening a {
+  color: var(--white);
+  margin: 15px;
+}
+
+.home-events {
+  margin-bottom: 30px;
+}
+
+.event-1 {
+  background-color: #b17eff;
+}
+
+.color1 {
+  background-color: rgba(120, 60, 208, 0.4);
+}
+
+.event-2 {
+  background-color: #ffb100;
+}
+
+.color2 {
+  background-color: rgba(203, 114, 19, 0.4);
+}
+
+.event-3 {
+  background-color: #6cbbfd;
+}
+
+.color3 {
+  background-color: rgba(38, 100, 211, 0.4);
+}
+
+.event-overlaycolor {
+  margin: 10px;
+}
+
 /* ABOUT US ---------- */
 
 .about-us-contact p:nth-child(4) {
   margin-bottom: 30px;
 }
+
+/* VISIT US ---------- */
 
 /* EXHIBITIONS ---------- */
 .bottom-navigationbar {
@@ -366,6 +407,17 @@ button a {
 
   #trigger:checked ~ .hamburger span:last-child {
     top: -12px;
+  }
+
+  .visit-us-info img,
+  .about-us-content img,
+  .for-kids-img,
+  .for-teachers-img,
+  .for-researchers-img,
+  .get-involved-img {
+    width: 750px;
+    height: 580px;
+    margin-bottom: 50px;
   }
 
   .bottom-navigationbar {
