@@ -24,6 +24,10 @@ body {
 main {
   width: 90%;
   margin: 30px auto 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 li {
@@ -252,6 +256,8 @@ footer :last-child {
   margin: 30px auto;
   display: block;
 }
+
+/* MAIN STYLE FOR ALL PAGES */
 
 /* HOME PAGE STYLE ---------- */
 .welcome {
