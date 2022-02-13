@@ -234,6 +234,11 @@ footer :last-child {
   background-position: center;
 }
 
+.home-whats-happening img {
+  width: 324px;
+  height: auto;
+}
+
 .visit-us-info img,
 .about-us-content img,
 .for-kids-img,
