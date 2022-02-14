@@ -20,8 +20,7 @@ body {
   background-color: var(--white);
 }
 
-body,
-html {
+.site {
   overflow-x: hidden;
 }
 
