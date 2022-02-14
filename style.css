@@ -7,6 +7,12 @@
   --darkblue: #5f85fc;
   --oceanblue: #7ac2cd;
   --lightgreen: #8efe9f;
+  --lightpurple: #e0ccff;
+  --darkpurple: #3d019f;
+  --lightorange: #ffe9bf;
+  --darkorange: #953900;
+  --lightblue: #84bdff;
+  --darkestblue: #003388;
 }
 
 /* BASE STYLE ---------- */
@@ -238,7 +244,8 @@ footer :last-child {
   background-position: center;
 }
 
-.home-whats-happening img {
+.home-whats-happening img,
+.whats-happening-content img {
   min-width: 100%;
   max-width: 100%;
   flex-shrink: 0;
@@ -277,13 +284,18 @@ footer :last-child {
   left: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome-text {
   background: rgba(171, 242, 239, 0.5);
   width: 90%;
-  margin: auto;
-  padding: 30px 5px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome-text h1 {
@@ -299,9 +311,6 @@ button {
   box-shadow: -3px 3px 0 3px rgba(95, 133, 252, 0.5);
   border: none;
   padding: 5px 10px;
-  margin: 20px auto;
-  z-index: 999;
-  float: right;
 }
 
 button a {
@@ -314,7 +323,7 @@ button a {
 
 .home-exhibitions img {
   width: 343px;
-  height: 190px;
+  height: auto;
 }
 
 .home-exhibitions p {
@@ -328,7 +337,6 @@ button a {
 .home-whats-happening h2,
 .home-whats-happening p,
 .home-whats-happening a {
-  color: var(--white);
   margin: 15px;
 }
 
@@ -340,32 +348,50 @@ button a {
   align-items: center;
 }
 
+.content-event-1,
 .event-1 {
-  background-color: #b17eff;
+  color: var(--darkpurple);
+  background-color: var(--lightpurple);
 }
 
-.color1 {
-  background-color: rgba(120, 60, 208, 0.4);
+.content-event-1 h4,
+.content-event-1 a,
+.event-1 h4,
+.event-1 a {
+  color: var(--darkpurple);
 }
 
+.content-event-2,
 .event-2 {
-  background-color: #ffb100;
+  color: var(--darkorange);
+  background-color: var(--lightorange);
 }
 
-.color2 {
-  background-color: rgba(203, 114, 19, 0.4);
+.content-event-2 h4,
+.content-event-2 a,
+.event-2 h4,
+.event-2 a {
+  color: var(--darkorange);
 }
 
+.content-event-3,
 .event-3 {
-  background-color: #6cbbfd;
+  color: var(--darkestblue);
+  background-color: var(--lightblue);
 }
 
-.color3 {
-  background-color: rgba(38, 100, 211, 0.4);
+.content-event-3 h4,
+.content-event-3 a,
+.event-3 h4,
+.event-3 a {
+  color: var(--darkestblue);
 }
 
-.event-overlaycolor {
-  margin: 10px;
+.block-text-right {
+  width: 100%;
+  display: block;
+  text-align: right;
+  padding-right: 30px;
 }
 
 /* ABOUT US ---------- */
@@ -394,20 +420,33 @@ button a {
   font-size: 18.66px;
 }
 
+/* WHATS HAPPENING DIV */
+.dates {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.dates p {
+  font-weight: 700;
+}
+
 /* MEDIA QUIRIES ---------- */
 @media (min-width: 768px) {
   main {
-    width: 90%;
+    width: 70%;
   }
 
   h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
 
   h2,
-  h3,
+  h3 {
+    font-size: 35px;
+  }
+
   p {
-    font-size: 47px;
+    font-size: 25px;
   }
 
   header {
@@ -440,6 +479,27 @@ button a {
     width: 750px;
     height: 580px;
     margin-bottom: 50px;
+  }
+
+  .welcome {
+    height: 800px;
+  }
+
+  .welcome-text {
+    height: 600px;
+  }
+
+  .welcome-text h1 {
+    font-size: 60px;
+  }
+
+  button {
+    padding: 15px 35px;
+  }
+
+  .home-exhibitions img,
+  .exhibition-content img {
+    width: 700px;
   }
 
   .bottom-navigationbar {
