@@ -16,11 +16,6 @@
   padding: 0;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   background-color: var(--white);
 }
@@ -131,11 +126,10 @@ nav {
   top: 0;
   z-index: 1000;
   transition: right 0.2s ease-in-out;
-  overflow-y: hidden;
 }
 
-.nav-green {
-  background-color: var(--lightgreen);
+.nav-content {
+  overflow-x: hidden;
 }
 
 nav ul {
