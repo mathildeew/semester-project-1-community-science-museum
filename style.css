@@ -22,6 +22,8 @@ body {
 
 .site {
   overflow-x: hidden !important;
+  position: relative;
+  width: 100%;
 }
 
 main {
