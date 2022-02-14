@@ -191,8 +191,8 @@ nav a:active {
 
 /* FOOTER STYLE ---------- */
 footer {
-  color: var(--white);
-  background-color: var(--black);
+  color: var(--black);
+  background-color: var(--lightgreen);
   width: 100vw;
   position: absolute;
   z-index: 999;
@@ -337,10 +337,6 @@ button a {
 
 .home-exhibitions a {
   color: var(--darkblue);
-}
-
-.home-whats-happening {
-  background-color: #e5ffec;
 }
 
 .home-whats-happening-content {
