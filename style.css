@@ -18,7 +18,7 @@
 /* BASE STYLE ---------- */
 
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
 }
 
@@ -34,7 +34,7 @@ body {
 
 main {
   width: 90%;
-  margin: 30px auto 50px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,7 +221,7 @@ footer :nth-child(12) {
 }
 
 footer :last-child {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 /* IMAGES ---------- */
@@ -244,32 +244,34 @@ footer :last-child {
   background-position: center;
 }
 
+.home-exhibitions img,
 .home-whats-happening img,
-.whats-happening-content img {
+.exhibition-content img,
+.whats-happening-content img,
+.about-us-content img,
+.visit-us-info img {
   min-width: 100%;
   max-width: 100%;
   flex-shrink: 0;
 }
 
-.visit-us-info img,
-.about-us-content img,
 .for-kids-img,
 .for-teachers-img,
 .for-researchers-img,
 .get-involved-img {
   background-size: cover;
-  width: 343px;
-  height: 295px;
+  width: auto;
+  height: 300px;
   margin: 30px auto;
   display: block;
 }
 
-.exhibition-content img {
-  width: 343px;
-  height: auto;
-}
-
 /* MAIN STYLE FOR ALL PAGES */
+
+.whats-happening-content {
+  display: flex;
+  flex-direction: column;
+}
 
 /* HOME PAGE STYLE ---------- */
 .welcome {
@@ -401,6 +403,9 @@ button a {
 }
 
 /* VISIT US ---------- */
+.visit-us-openinghours {
+  padding-bottom: 30px;
+}
 
 /* EXHIBITIONS ---------- */
 .bottom-navigationbar {
@@ -421,6 +426,11 @@ button a {
 }
 
 /* WHATS HAPPENING DIV */
+.whats-happening-content h2 {
+  text-align: center;
+  display: block;
+}
+
 .dates {
   text-transform: uppercase;
   padding-bottom: 30px;
