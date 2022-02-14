@@ -27,7 +27,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
 }
 
 li {
@@ -94,6 +93,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  overflow-x: hidden;
 }
 
 .header-green {
