@@ -418,7 +418,8 @@ button a {
   align-items: center;
 }
 
-.visit-us-content {
+.visit-us-content,
+.visit-us-location {
   margin-top: 30px;
 }
 
