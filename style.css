@@ -193,7 +193,6 @@ footer {
 }
 
 .footer-content {
-  width: 90%;
   margin: 30px auto;
 }
 
@@ -272,7 +271,6 @@ footer h2:first-child {
   background: url(images/energetica-nazrin-babashova-iKjAj_oq-IE-unsplash-downsized-cropped-2000.jpg) no-repeat;
 }
 
-/* .home-exhibitions img, */
 .home-whats-happening img,
 .about-us-content img,
 .visit-us-info img {
@@ -298,17 +296,37 @@ footer h2:first-child {
 
 /* MAIN STYLE FOR ALL PAGES */
 /* .home-exhibitions, */
-.home-whats-happening,
-.whats-happening-content,
-.exhibition-content,
-.explore-content,
-.about-us-content,
+.flex-column,
 .get-involved-content {
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.welcome-text,
+.exhibition-content,
+.home-whats-happening,
+.whats-happening-content,
+.visit-us-info,
+.explore-content,
+.about-us-content,
+.get-involved-content,
+.footer-content {
+  width: 90%;
+}
+
+.welcome,
+.home-exhibitions,
+.home-exhib,
+.home-whats-happening,
+.content-event,
+.visit-us-info,
+.planvisit-grid,
+.visit-us-openinghours,
+.visit-us-location,
+.about-us-contact p:nth-child(4) {
+  margin-bottom: 30px;
 }
 
 /* HOME PAGE STYLE ---------- */
@@ -318,21 +336,11 @@ footer h2:first-child {
   background-repeat: no-repeat;
   width: 100%;
   height: 515px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .welcome-text {
   background: rgba(145, 172, 255, 0.5);
-  width: 90%;
   height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .welcome-text h1 {
@@ -354,17 +362,9 @@ button a {
   color: var(--black);
 }
 
-.home-exhibitions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 .home-exhib {
   width: 100%;
   height: 190px;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -401,10 +401,6 @@ button a {
 }
 .exhib-5 span {
   color: #f28e24;
-}
-
-.home-whats-happening {
-  margin-bottom: 30px;
 }
 
 .home-events {
@@ -451,7 +447,6 @@ button a {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 7px;
   grid-row-gap: 7px;
-  margin-bottom: 30px;
 }
 
 .grid {
@@ -476,35 +471,12 @@ button a {
 
 /* ABOUT US ---------- */
 
-.about-us-contact p:nth-child(4) {
-  margin-bottom: 30px;
-}
-
 .about-us-contact {
   padding-bottom: 30px;
   width: 100%;
 }
 
 /* VISIT US ---------- */
-
-.visit-us-info {
-  width: 90%;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.visit-us-content,
-.visit-us-location {
-  margin-top: 30px;
-}
-
-.visit-us-openinghours,
-.visit-us-location {
-  margin-bottom: 30px;
-}
 
 .visit-us-content a {
   display: block;
@@ -535,6 +507,7 @@ button a {
   align-items: center;
   position: sticky;
   bottom: 0;
+  display: none;
 }
 
 .bottom-navigationbar a {
@@ -545,10 +518,6 @@ button a {
 /* WHATS HAPPENING */
 .content-padding {
   padding-left: 20px;
-}
-
-.content-event {
-  margin-bottom: 30px;
 }
 
 .whats-happening-img {
