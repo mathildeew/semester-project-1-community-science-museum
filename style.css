@@ -96,7 +96,6 @@ header {
   background: var(--white);
   width: 100vw;
   height: 60px;
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -104,6 +103,7 @@ header {
 
 .header-green {
   background-color: var(--lightgreen);
+  margin-bottom: 30px;
 }
 
 .hamburger span {
@@ -196,16 +196,6 @@ footer {
   margin: 30px auto;
 }
 
-.footer-adress,
-.footer-contact,
-.footer-openinghours {
-  margin-bottom: 30px;
-}
-
-footer h2:first-child {
-  margin-bottom: 30px;
-}
-
 /* IMAGES ---------- */
 .exhib-1 {
   background: url(images/brano-Mm1VIPqd0OA-unsplash-downsized-2330.jpg) no-repeat;
@@ -214,61 +204,52 @@ footer h2:first-child {
   background: url(images/national-cancer-institute-L7en7Lb-Ovc-unsplash-downsized-2400.jpg) no-repeat;
 }
 .exhib-4 {
-  background: url(images/nariman-mosharrafa-7VSQt-obpso-unsplash.-downsized-2100.jpg) no-repeat;
-  background-position-y: center;
+  background: url(images/nariman-mosharrafa-7VSQt-obpso-unsplash.-downsized-2100.jpg) center no-repeat;
 }
 .exhib-2 {
-  background: url(images/nasa-rTZW4f02zY8-unsplash-downsized-2151.jpg) no-repeat;
-  background-position-y: top;
+  background: url(images/nasa-rTZW4f02zY8-unsplash-downsized-2151.jpg) top no-repeat;
 }
 
 .exhib-5 {
-  background: url(images/possessed-photography-rDxP1tF3CmA-unsplash-2074.jpg) no-repeat;
-  background-position-y: center;
+  background: url(images/possessed-photography-rDxP1tF3CmA-unsplash-2074.jpg) center no-repeat;
 }
 
 .for-kids-img {
-  background: url("images/samuel-zeller-158996-downsized-1800.jpg") no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
+  background: url("images/samuel-zeller-158996-downsized-1800.jpg") center bottom/cover no-repeat;
 }
 .for-teachers-img {
-  background: url("images/bee-naturalles-IRM9qgZdlW0-unsplash-2692-downsized.jpg") no-repeat;
+  background: url("images/bee-naturalles-IRM9qgZdlW0-unsplash-2692-downsized.jpg") cover no-repeat;
 }
 .for-researchers-img {
-  background: url("images/misael-moreno-Rl9bIWKCVF0-unsplash-2700-downsized.jpg") no-repeat;
+  background: url("images/misael-moreno-Rl9bIWKCVF0-unsplash-2700-downsized.jpg") cover no-repeat;
 }
+
 .get-involved-img {
-  background: url("images/markus-spiske-197281-downsized-2258.jpg") no-repeat;
-  background-position: center;
+  background: url("images/markus-spiske-197281-downsized-2258.jpg") center/cover no-repeat;
 }
 
 .planvisit-teachers {
-  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1600.jpg) no-repeat;
-  background-position-y: bottom;
+  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1600.jpg) bottom no-repeat;
 }
 .planvisit-foodanddrinks {
-  background: url(images/yu-kato-X9yeaqT8ONE-unsplash-downsized-1150.jpg) no-repeat;
-  background-position-x: right;
+  background: url(images/yu-kato-X9yeaqT8ONE-unsplash-downsized-1150.jpg) right no-repeat;
 }
 .planvisit-getintouch {
-  background: url(images/samuel-zeller-113381-downsized-1450.jpg) no-repeat;
-  background-position: center center;
+  background: url(images/samuel-zeller-113381-downsized-1450.jpg) center center no-repeat;
 }
 .planvisit-location {
-  background: url(images/luke-ellis-craven-400722-downsized-1580.jpg) no-repeat;
-  background-position-y: top;
+  background: url(images/luke-ellis-craven-400722-downsized-1580.jpg) top no-repeat;
 }
 
 .content-event-1-img {
-  background: url(images/Sheila-Widnall-MIT-Museum.jpg) no-repeat;
+  background: url(images/Sheila-Widnall-MIT-Museum.jpg) cover no-repeat;
 }
 .content-event-2-img {
-  background: url(images/celso-405219-downsized-cropped-1440.jpg) no-repeat;
+  background: url(images/celso-405219-downsized-cropped-1440.jpg) cover no-repeat;
 }
 
 .content-event-3-img {
-  background: url(images/energetica-nazrin-babashova-iKjAj_oq-IE-unsplash-downsized-cropped-2000.jpg) no-repeat;
+  background: url(images/energetica-nazrin-babashova-iKjAj_oq-IE-unsplash-downsized-cropped-2000.jpg) cover no-repeat;
 }
 
 .home-whats-happening img,
@@ -282,7 +263,6 @@ footer h2:first-child {
 .explore-img,
 .get-involved-img,
 .whats-happening-img {
-  background-size: cover;
   width: 100%;
   height: 300px;
   margin: 30px auto;
@@ -294,48 +274,32 @@ footer h2:first-child {
   background-size: cover;
 }
 
-/* MAIN STYLE FOR ALL PAGES */
-/* .home-exhibitions, */
-.flex-column,
-.get-involved-content {
+/* MAIN STYLE FOR ALL PAGES ----------*/
+.flex-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.welcome-text,
-.exhibition-content,
-.home-whats-happening,
-.whats-happening-content,
-.visit-us-info,
-.explore-content,
-.about-us-content,
-.get-involved-content,
-.footer-content {
+.width {
   width: 90%;
 }
 
-.welcome,
-.home-exhibitions,
+.margin-bottom,
 .home-exhib,
-.home-whats-happening,
 .content-event,
-.visit-us-info,
-.planvisit-grid,
-.visit-us-openinghours,
-.visit-us-location,
-.about-us-contact p:nth-child(4) {
+.about-us-contact p:nth-child(4),
+footer h2:first-child {
   margin-bottom: 30px;
 }
 
 /* HOME PAGE STYLE ---------- */
 .welcome {
-  background: url(images/atom-frontpage-william-bout-264826-downsized.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(images/atom-frontpage-william-bout-264826-downsized.jpg) center/cover no-repeat;
   width: 100%;
   height: 515px;
+  top: 0;
 }
 
 .welcome-text {
@@ -362,6 +326,7 @@ button a {
   color: var(--black);
 }
 
+/* BOTH HOME & EXHIBITION PAGE ---------- */
 .home-exhib {
   width: 100%;
   height: 190px;
@@ -431,14 +396,6 @@ button a {
 
 .home-events-content p:nth-child(3) {
   font-weight: 700;
-  text-transform: uppercase;
-}
-
-.block-text-right {
-  width: 100%;
-  display: block;
-  text-align: right;
-  padding-right: 30px;
 }
 
 .planvisit-grid {
@@ -471,16 +428,9 @@ button a {
 
 /* ABOUT US ---------- */
 
-.about-us-contact {
-  padding-bottom: 30px;
-  width: 100%;
-}
-
 /* VISIT US ---------- */
-
 .visit-us-content a {
   display: block;
-  color: var(--darkblue);
 }
 
 /* EXHIBITIONS ---------- */
@@ -612,13 +562,7 @@ button a {
     padding: 15px 35px;
   }
 
-  .home-events,
-  .visit-us-info,
-  .about-us-content,
-  .explore-content,
-  .whats-happening-content,
-  .get-involved-content,
-  .footer-content {
+  .width {
     width: 80%;
   }
 
@@ -670,13 +614,7 @@ button a {
   }
 }
 @media (min-width: 1280px) {
-  .home-events,
-  .visit-us-info,
-  .about-us-content,
-  .explore-content,
-  .whats-happening-content,
-  .get-involved-content,
-  .footer-content {
+  .width {
     max-width: 1280px;
   }
 }
