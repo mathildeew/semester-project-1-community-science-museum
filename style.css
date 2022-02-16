@@ -7,16 +7,9 @@
   --darkblue: #5f85fc;
   --oceanblue: #7ac2cd;
   --lightgreen: #8efe9f;
-  --lightpurple: #e0ccff;
-  --darkpurple: #3d019f;
-  --lightorange: #ffe9bf;
-  --darkorange: #953900;
-  --lightblue: #84bdff;
-  --darkestblue: #003388;
 }
 
 /* BASE STYLE ---------- */
-
 * {
   margin: 0;
   padding: 0;
@@ -26,16 +19,14 @@ body {
   background-color: var(--white);
 }
 
-.site {
-  /* PUT IN FOR TRANSITOIN OF NAV
+/* .site {
+  PUT IN FOR TRANSITOIN OF NAV
   overflow-x: hidden !important;
-  position: relative;*/
+  position: relative;
   width: 100vw;
-}
+}*/
 
 main {
-  /* width: 90%; */
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +43,7 @@ h1 {
   letter-spacing: 0.45px;
   text-transform: uppercase;
   text-align: center;
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 h2,
@@ -86,8 +77,10 @@ p:not(.no-bottom-margin p) {
 }
 
 a {
+  color: #5f85fc;
   font: 18px "proxima-nova";
   font-weight: 700;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -95,7 +88,7 @@ a {
 hr {
   border: 0.5px solid var(--black);
   width: 80%;
-  margin: 30px auto;
+  margin-bottom: 30px;
 }
 
 /* NAVIGATION ---------- */
@@ -103,6 +96,7 @@ header {
   background: var(--white);
   width: 100vw;
   height: 60px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -214,29 +208,72 @@ footer h2:first-child {
 }
 
 /* IMAGES ---------- */
+.exhib-1 {
+  background: url(images/brano-Mm1VIPqd0OA-unsplash-downsized-2330.jpg) no-repeat;
+}
+.exhib-3 {
+  background: url(images/national-cancer-institute-L7en7Lb-Ovc-unsplash-downsized-2400.jpg) no-repeat;
+}
+.exhib-4 {
+  background: url(images/nariman-mosharrafa-7VSQt-obpso-unsplash.-downsized-2100.jpg) no-repeat;
+  background-position-y: center;
+}
+.exhib-2 {
+  background: url(images/nasa-rTZW4f02zY8-unsplash-downsized-2151.jpg) no-repeat;
+  background-position-y: top;
+}
+
+.exhib-5 {
+  background: url(images/possessed-photography-rDxP1tF3CmA-unsplash-2074.jpg) no-repeat;
+  background-position-y: center;
+}
+
 .for-kids-img {
   background: url("images/samuel-zeller-158996-downsized-1800.jpg") no-repeat;
   background-position-x: center;
   background-position-y: bottom;
 }
-
 .for-teachers-img {
   background: url("images/bee-naturalles-IRM9qgZdlW0-unsplash-2692-downsized.jpg") no-repeat;
 }
-
 .for-researchers-img {
   background: url("images/misael-moreno-Rl9bIWKCVF0-unsplash-2700-downsized.jpg") no-repeat;
 }
-
 .get-involved-img {
   background: url("images/markus-spiske-197281-downsized-2258.jpg") no-repeat;
   background-position: center;
 }
 
-.home-exhibitions img,
+.planvisit-teachers {
+  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1600.jpg) no-repeat;
+  background-position-y: bottom;
+}
+.planvisit-foodanddrinks {
+  background: url(images/yu-kato-X9yeaqT8ONE-unsplash-downsized-1150.jpg) no-repeat;
+  background-position-x: right;
+}
+.planvisit-getintouch {
+  background: url(images/samuel-zeller-113381-downsized-1450.jpg) no-repeat;
+  background-position: center center;
+}
+.planvisit-location {
+  background: url(images/luke-ellis-craven-400722-downsized-1580.jpg) no-repeat;
+  background-position-y: top;
+}
+
+.content-event-1-img {
+  background: url(images/Sheila-Widnall-MIT-Museum.jpg) no-repeat;
+}
+.content-event-2-img {
+  background: url(images/celso-405219-downsized-cropped-1440.jpg) no-repeat;
+}
+
+.content-event-3-img {
+  background: url(images/energetica-nazrin-babashova-iKjAj_oq-IE-unsplash-downsized-cropped-2000.jpg) no-repeat;
+}
+
+/* .home-exhibitions img, */
 .home-whats-happening img,
-.exhibition-content img,
-.whats-happening-content img,
 .about-us-content img,
 .visit-us-info img {
   min-width: 100%;
@@ -244,10 +281,9 @@ footer h2:first-child {
   flex-shrink: 0;
 }
 
-.for-kids-img,
-.for-teachers-img,
-.for-researchers-img,
-.get-involved-img {
+.explore-img,
+.get-involved-img,
+.whats-happening-img {
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -255,10 +291,16 @@ footer h2:first-child {
   display: block;
 }
 
+.planvisit-img,
+.exhib {
+  background-size: cover;
+}
+
 /* MAIN STYLE FOR ALL PAGES */
-.home-exhibitions,
-.exhibition-content,
+/* .home-exhibitions, */
+.home-whats-happening,
 .whats-happening-content,
+.exhibition-content,
 .explore-content,
 .about-us-content,
 .get-involved-content {
@@ -269,22 +311,14 @@ footer h2:first-child {
   align-items: center;
 }
 
-.whats-happening-content {
-  display: flex;
-  flex-direction: column;
-}
-
 /* HOME PAGE STYLE ---------- */
 .welcome {
   background: url(images/atom-frontpage-william-bout-264826-downsized.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 1px;
   width: 100%;
   height: 515px;
-  position: relative;
-  top: 0;
-  left: 0;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -292,7 +326,7 @@ footer h2:first-child {
 }
 
 .welcome-text {
-  background: rgba(171, 242, 239, 0.5);
+  background: rgba(145, 172, 255, 0.5);
   width: 90%;
   height: 400px;
   display: flex;
@@ -311,7 +345,7 @@ footer h2:first-child {
 
 button {
   background: var(--darkblue);
-  box-shadow: -3px 3px 0 3px rgba(95, 133, 252, 0.5);
+  box-shadow: -3px 3px 0 3px rgba(142, 254, 159, 0.5);
   border: none;
   padding: 5px 10px;
 }
@@ -320,73 +354,88 @@ button a {
   color: var(--black);
 }
 
-.home-exhibitions img {
-  width: 343px;
-  height: auto;
+.home-exhibitions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.home-exhibitions p {
-  margin: 10px 0 20px;
-}
-
-.home-exhibitions a {
-  color: var(--darkblue);
-}
-
-.home-whats-happening-content {
+.home-exhib {
+  width: 100%;
+  height: 190px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+.exhib span {
+  font-family: "proxima-nova";
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-left: 20px;
+}
+
+.home-exhib span {
+  font-size: 23px;
+}
+
+.exhib a {
+  color: var(--white);
+  margin-left: 20px;
+}
+
+.exhib-1 span {
+  color: #fd8dd7;
+}
+.exhib-3 span {
+  color: #ec646c;
+}
+.exhib-4 span {
+  color: #29fd39;
+}
+.exhib-2 span {
+  color: #f79b64;
+}
+.exhib-5 span {
+  color: #f28e24;
+}
+
+.home-whats-happening {
+  margin-bottom: 30px;
 }
 
 .home-events {
-  width: 90%;
-  margin: 30px auto;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 20px;
 }
 
-.content-event-1,
-.event-1 {
-  color: var(--darkpurple);
-  background-color: var(--lightpurple);
+.home-events-content {
+  padding: 20px;
 }
 
-.content-event-1 h4,
-.content-event-1 a,
-.event-1 h4,
-.event-1 a {
-  color: var(--darkpurple);
+.event-blue {
+  color: #026b7e;
+  background-color: #c4f6ff;
 }
 
-.content-event-2,
-.event-2 {
-  color: var(--darkorange);
-  background-color: var(--lightorange);
+.event-blue * {
+  color: #026b7e;
 }
 
-.content-event-2 h4,
-.content-event-2 a,
-.event-2 h4,
-.event-2 a {
-  color: var(--darkorange);
+.event-green {
+  color: #c4f6ff;
+  background-color: #026b7e;
 }
 
-.content-event-3,
-.event-3 {
-  color: var(--darkestblue);
-  background-color: var(--lightblue);
+.event-green * {
+  color: #c4f6ff;
 }
 
-.content-event-3 h4,
-.content-event-3 a,
-.event-3 h4,
-.event-3 a {
-  color: var(--darkestblue);
+.home-events-content p:nth-child(3) {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .block-text-right {
@@ -394,6 +443,35 @@ button a {
   display: block;
   text-align: right;
   padding-right: 30px;
+}
+
+.planvisit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-planvisit a {
+  font: 18px "mixta-didone-alt";
+}
+
+.black-link {
+  color: var(--black);
+}
+
+.white-link {
+  color: var(--white);
 }
 
 /* ABOUT US ---------- */
@@ -434,6 +512,19 @@ button a {
 }
 
 /* EXHIBITIONS ---------- */
+.exhibitions-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exhibitions-img span {
+  font-size: 30px;
+}
+
 .bottom-navigationbar {
   color: var(--white);
   background: var(--oceanblue);
@@ -452,9 +543,24 @@ button a {
 }
 
 /* WHATS HAPPENING */
-.whats-happening-content h2 {
-  text-align: center;
-  display: block;
+.content-padding {
+  padding-left: 20px;
+}
+
+.content-event {
+  margin-bottom: 30px;
+}
+
+.whats-happening-img {
+  margin-top: 0px;
+}
+
+.whats-happening-blue {
+  background-color: #c4f6ff;
+}
+
+.whats-happening-green {
+  background-color: #026b7e;
 }
 
 .dates {
@@ -464,10 +570,6 @@ button a {
 
 .dates p {
   font-weight: 700;
-}
-
-.content-event-3 {
-  margin-bottom: 30px;
 }
 
 /* EXPLORE */
@@ -522,7 +624,6 @@ button a {
     width: 500px;
   }
 
-  .home-exhibitions img,
   .exhibition-content img {
     width: 700px;
   }
