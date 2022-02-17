@@ -126,7 +126,7 @@ header {
 nav {
   background: var(--white);
   width: 100vw;
-  height: 100%;
+  height: 100vw;
   position: absolute;
   right: -100vw;
   margin-top: 59px;
@@ -218,10 +218,10 @@ footer {
   background: url("images/samuel-zeller-158996-downsized-1800.jpg") center bottom/cover no-repeat;
 }
 .for-teachers-img {
-  background: url("images/bee-naturalles-IRM9qgZdlW0-unsplash-2692-downsized.jpg") cover no-repeat;
+  background: url("images/bee-naturalles-IRM9qgZdlW0-unsplash-2692-downsized.jpg") center/cover no-repeat;
 }
 .for-researchers-img {
-  background: url("images/misael-moreno-Rl9bIWKCVF0-unsplash-2700-downsized.jpg") cover no-repeat;
+  background: url("images/misael-moreno-Rl9bIWKCVF0-unsplash-2700-downsized.jpg") center/cover no-repeat;
 }
 
 .get-involved-img {
@@ -316,8 +316,8 @@ footer h2:first-child {
 }
 
 button {
-  background: var(--darkblue);
-  box-shadow: -3px 3px 0 3px rgba(142, 254, 159, 0.5);
+  background: #7de58d;
+  box-shadow: -3px 3px 0 3px rgba(0, 201, 31, 0.5);
   border: none;
   padding: 5px 10px;
 }
@@ -399,6 +399,7 @@ button a {
 }
 
 .planvisit-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -407,7 +408,7 @@ button a {
 }
 
 .grid {
-  width: 160px;
+  width: 100%;
   height: 160px;
   display: flex;
   justify-content: center;
@@ -415,7 +416,7 @@ button a {
 }
 
 .home-planvisit a {
-  font: 18px "mixta-didone-alt";
+  font: 17px "mixta-didone-alt";
 }
 
 .black-link {
@@ -498,10 +499,6 @@ button a {
 
 /* MEDIA QUIRIES ---------- */
 @media (min-width: 768px) {
-  main {
-    width: 100%;
-  }
-
   h1 {
     font-size: 45px;
   }
@@ -511,7 +508,11 @@ button a {
   h4,
   p,
   a {
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  hr {
+    margin-bottom: 50px;
   }
 
   header {
@@ -535,17 +536,6 @@ button a {
     top: -12px;
   }
 
-  .for-kids-img,
-  .for-teachers-img,
-  .for-researchers-img,
-  .get-involved-img {
-    height: 500px;
-    width: 500px;
-  }
-
-  .exhibition-content img {
-    width: 700px;
-  }
   .welcome {
     height: 800px;
   }
@@ -566,11 +556,47 @@ button a {
     width: 80%;
   }
 
+  .home-exhib,
+  .content-event,
+  .about-us-contact p:nth-child(4),
+  footer h2:first-child {
+    margin-bottom: 50px;
+  }
+
+  .home-exhib {
+    height: 360px;
+  }
+
+  .home-exhib span {
+    font-size: 40px;
+  }
+
   .home-events-content {
-    padding: 0 20px;
+    padding: 20px 40px;
+  }
+
+  .planvisit-grid {
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  .grid {
+    height: 300px;
+  }
+
+  .home-planvisit a {
+    font-size: 30px;
+  }
+
+  .exhibitions-img {
+    height: 350px;
+  }
+
+  .exhibitions-img span {
+    font-size: 40px;
   }
 
   .bottom-navigationbar {
+    display: contents;
     flex-direction: row;
   }
 }
@@ -582,15 +608,6 @@ button a {
 
   .nav-black-links a:hover {
     color: var(--darkblue);
-  }
-
-  .home-whats-happening-content {
-    flex-direction: row;
-    row-gap: 5px;
-  }
-
-  .home-events {
-    width: 30%;
   }
 
   .home-whats-happening-content hr {
