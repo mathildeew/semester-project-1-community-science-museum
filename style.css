@@ -284,6 +284,7 @@ footer {
 
 .width {
   width: 90%;
+  max-width: 1100px;
 }
 
 .margin-bottom,
@@ -304,6 +305,7 @@ footer h2:first-child {
 
 .welcome-text {
   background: rgba(145, 172, 255, 0.5);
+  max-width: 400px;
   height: 400px;
 }
 
@@ -542,10 +544,11 @@ button a {
 
   .welcome-text {
     height: 600px;
+    max-width: 800px;
   }
 
   .welcome-text h1 {
-    font-size: 60px;
+    font-size: 45px;
   }
 
   button {
@@ -610,6 +613,16 @@ button a {
     color: var(--darkblue);
   }
 
+  .home-whats-happening-content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .home-events {
+    width: 50%;
+  }
+
   .home-whats-happening-content hr {
     display: none;
   }
@@ -624,6 +637,25 @@ button a {
     gap: 20px;
   }
 
+  .clearfix {
+    display: flow-root;
+    margin-bottom: 50px;
+  }
+
+  .float-right {
+    float: right;
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  .explore-img {
+    width: 50%;
+    height: 450px;
+    margin: auto;
+  }
+
   .footer-content {
     display: flex;
     flex-direction: row;
@@ -631,7 +663,4 @@ button a {
   }
 }
 @media (min-width: 1280px) {
-  .width {
-    max-width: 1280px;
-  }
 }
