@@ -318,14 +318,14 @@ footer h2:first-child {
   margin: auto;
 }
 
-button {
+.button {
   background: #7de58d;
   box-shadow: -3px 3px 0 3px rgba(0, 201, 31, 0.5);
   border: none;
   padding: 5px 10px;
 }
 
-button a {
+.welcome-text a {
   color: var(--black);
 }
 
