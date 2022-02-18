@@ -657,7 +657,7 @@ button a {
     height: 400px;
   }
 
-  . .footer-content {
+  .footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
