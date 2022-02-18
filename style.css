@@ -644,19 +644,20 @@ button a {
 
   .float-right {
     float: right;
+    margin: auto auto auto 20px;
   }
 
   .float-left {
     float: left;
+    margin: 0px 20px auto auto;
   }
 
   .explore-img {
     width: 50%;
-    height: 450px;
-    margin: auto;
+    height: 400px;
   }
 
-  .footer-content {
+  . .footer-content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
