@@ -88,15 +88,26 @@ a {
 hr {
   border: 0.5px solid var(--black);
   width: 80%;
+  max-width: 900px;
   margin-bottom: 30px;
 }
 
 /* NAVIGATION ---------- */
+.width-header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 header {
   background: var(--white);
   width: 100vw;
   height: 60px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -123,7 +134,7 @@ header {
   text-transform: initial;
 }
 
-.nav {
+nav {
   background: var(--white);
   width: 100vw;
   height: 100%;
@@ -137,18 +148,17 @@ header {
   overflow-x: hidden;
 }
 
-.nav ul {
+nav ul {
   margin-top: 50px;
 }
-
-.nav a,
-.nav p {
+nav a,
+nav p {
   color: var(--darkblue);
   margin-left: 35px;
   padding: 5px;
 }
 
-.nav li {
+nav li {
   margin-bottom: 20px;
 }
 
@@ -157,7 +167,7 @@ header {
   text-transform: initial;
 }
 
-.nav a:active {
+nav a:active {
   color: inherit;
 }
 
@@ -165,7 +175,7 @@ header {
   display: none;
 }
 
-#trigger:checked ~ .nav {
+#trigger:checked ~ nav {
   right: 0;
   display: initial; /* REMOVE TO MAKE TRANSITION WORK */
 }
@@ -210,9 +220,21 @@ footer {
 .exhib-2 {
   background: url(images/nasa-rTZW4f02zY8-unsplash-downsized-2151.jpg) top no-repeat;
 }
-
 .exhib-5 {
   background: url(images/possessed-photography-rDxP1tF3CmA-unsplash-2074.jpg) center no-repeat;
+}
+
+.planvisit-teachers {
+  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1600.jpg) bottom no-repeat;
+}
+.planvisit-foodanddrinks {
+  background: url(images/yu-kato-X9yeaqT8ONE-unsplash-downsized-1150.jpg) right no-repeat;
+}
+.planvisit-getintouch {
+  background: url(images/samuel-zeller-113381-downsized-1450.jpg) center center no-repeat;
+}
+.planvisit-location {
+  background: url(images/luke-ellis-craven-400722-downsized-1580.jpg) top no-repeat;
 }
 
 .for-kids-img {
@@ -229,31 +251,8 @@ footer {
   background: url("images/markus-spiske-197281-downsized-2258.jpg") center center/cover no-repeat;
 }
 
-.planvisit-teachers {
-  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1600.jpg) bottom no-repeat;
-}
-.planvisit-foodanddrinks {
-  background: url(images/yu-kato-X9yeaqT8ONE-unsplash-downsized-1150.jpg) right no-repeat;
-}
-.planvisit-getintouch {
-  background: url(images/samuel-zeller-113381-downsized-1450.jpg) center center no-repeat;
-}
-.planvisit-location {
-  background: url(images/luke-ellis-craven-400722-downsized-1580.jpg) top no-repeat;
-}
-
-/* .content-event-1-img {
-  background: url(images/Sheila-Widnall-MIT-Museum.jpg) cover no-repeat;
-}
-.content-event-2-img {
-  background: url(images/celso-405219-downsized-cropped-1440.jpg) cover no-repeat;
-}
-
-.content-event-3-img {
-  background: url(images/energetica-nazrin-babashova-iKjAj_oq-IE-unsplash-downsized-cropped-2000.jpg) cover no-repeat;
-} */
-
 .home-whats-happening img,
+.whats-happening-content img,
 .about-us-content img,
 .visit-us-info img {
   min-width: 100%;
@@ -261,12 +260,16 @@ footer {
   flex-shrink: 0;
 }
 
+.about-us-content img,
+.visit-us-content img {
+  margin-bottom: 20px;
+}
+
 .explore-img,
-.get-involved-img,
-.whats-happening-img {
+.get-involved-img {
   width: 100%;
   height: 300px;
-  margin: 30px auto;
+  margin: 0 0 30px auto;
   display: block;
 }
 
@@ -285,7 +288,7 @@ footer {
 
 .width {
   width: 90%;
-  max-width: 1100px;
+  max-width: 800px;
 }
 
 .margin-bottom,
@@ -308,6 +311,7 @@ footer h2:first-child {
   background: rgba(145, 172, 255, 0.5);
   max-width: 400px;
   height: 400px;
+  padding: 10px 0;
 }
 
 .welcome-text h1 {
@@ -320,13 +324,18 @@ footer h2:first-child {
 
 .button {
   background: #7de58d;
-  box-shadow: -3px 3px 0 3px rgba(0, 201, 31, 0.5);
+  box-shadow: 5px 5px 0 0 rgb(0, 201, 31), inset 5px 5px 0 0 rgb(0, 201, 31);
   border: none;
-  padding: 5px 10px;
+  padding: 10px 15px;
+  transition: font-style 0.5s;
 }
 
 .welcome-text a {
   color: var(--black);
+}
+
+.button:hover {
+  font-style: italic;
 }
 
 /* BOTH HOME & EXHIBITION PAGE ---------- */
@@ -368,9 +377,8 @@ footer h2:first-child {
 
 .exhib span:nth-child(3) {
   font-size: 18px;
-    color: var(--white);
-    margin-left: 20px;
-  }
+  color: var(--white);
+  margin-left: 20px;
 }
 
 .home-events {
@@ -403,6 +411,10 @@ footer h2:first-child {
   font-weight: 700;
 }
 
+.home-events a {
+  place-content: ;
+}
+
 .planvisit-grid {
   width: 100%;
   display: grid;
@@ -420,7 +432,7 @@ footer h2:first-child {
   align-items: center;
 }
 
-.home-planvisit a {
+.grid a {
   font: 17px "mixta-didone-alt";
 }
 
@@ -473,7 +485,7 @@ footer h2:first-child {
 
 /* WHATS HAPPENING */
 .content-padding {
-  padding-left: 20px;
+  padding: 0 0 0 20px;
 }
 
 .whats-happening-img {
@@ -506,6 +518,7 @@ footer h2:first-child {
 @media (min-width: 768px) {
   h1 {
     font-size: 45px;
+    margin-bottom: 50px;
   }
 
   h2,
@@ -518,6 +531,19 @@ footer h2:first-child {
 
   hr {
     margin-bottom: 50px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 50px;
+  }
+
+  nav ul {
+    text-align: right;
+    margin-right: 10%;
+  }
+
+  .welcome-text a {
+    font-size: 25px;
   }
 
   header {
@@ -577,6 +603,10 @@ footer h2:first-child {
     font-size: 40px;
   }
 
+  .home-exhib span:nth-child(3) {
+    font-size: 20px;
+  }
+
   .home-events-content {
     padding: 20px 40px;
   }
@@ -605,15 +635,36 @@ footer h2:first-child {
     display: contents;
     flex-direction: row;
   }
+
+  .content-padding {
+    padding: 0 40px;
+  }
+
+  .for-kids-img {
+    background-position: center center;
+  }
 }
 
 @media (min-width: 1024px) {
+  .width {
+    width: 70%;
+  }
+
   nav a:hover {
     color: var(--black);
   }
 
   .nav-black-links a:hover {
     color: var(--darkblue);
+  }
+
+  .exhib:hover span:nth-child(3) {
+    letter-spacing: 20px;
+  }
+
+  .grid:hover a {
+    font-size: 32px;
+    letter-spacing: 10px;
   }
 
   .home-whats-happening-content {
@@ -624,10 +675,19 @@ footer h2:first-child {
 
   .home-events {
     width: 50%;
+    height: 612px;
   }
 
   .home-whats-happening-content hr {
     display: none;
+  }
+
+  .exhibitions-img {
+    height: 500px;
+  }
+
+  .exhibitions-img span {
+    font-size: 80px;
   }
 
   .image-div {
@@ -645,18 +705,29 @@ footer h2:first-child {
     margin-bottom: 50px;
   }
 
-  .float-right {
+  .about-us-content img {
+    margin: auto;
+  }
+
+  .float-right,
+  .float-right-img {
     float: right;
     margin: auto auto auto 20px;
   }
 
-  .float-left {
+  .float-left,
+  .float-left-img {
     float: left;
     margin: 0px 20px auto auto;
   }
 
+  .float-right-img,
+  .float-left-img,
   .explore-img {
     width: 50%;
+  }
+
+  .explore-img {
     height: 400px;
   }
 
@@ -666,5 +737,47 @@ footer h2:first-child {
     justify-content: space-evenly;
   }
 }
-@media (min-width: 1280px) {
+
+@media (min-width: 1100px) {
+  nav {
+    display: contents;
+    z-index: 0;
+    margin-top: 0;
+    right: auto;
+    height: auto;
+    width: auto;
+    position: initial;
+  }
+
+  nav ul {
+    margin-top: 28px;
+    margin-right: auto;
+  }
+
+  .bigscreen-hide {
+    display: none;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  nav a {
+    margin-left: auto;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .hamburger span {
+    display: none;
+  }
+
+  .nav-black-links {
+    display: block;
+    margin-top: 10px;
+  }
+
+  &bull; {
+
+  }
 }
