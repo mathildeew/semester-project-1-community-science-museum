@@ -128,12 +128,12 @@ header {
   width: 100vw;
   height: 100%;
   position: absolute;
-  right: -100vw;
+  /* right: -100vw; */
   margin-top: 59px;
   top: 0;
   z-index: 1000;
   transition: right 0.2s ease-in-out;
-  display: none; /* REMOVE FOR TRANSITION TO WORK */
+  display: none; /*REMOVE FOR TRANSITION TO WORK */
   overflow-x: hidden;
 }
 
@@ -226,7 +226,7 @@ footer {
 }
 
 .get-involved-img {
-  background: url("images/markus-spiske-197281-downsized-2258.jpg") center/cover no-repeat;
+  background: url("images/markus-spiske-197281-downsized-2258.jpg") center center/cover no-repeat;
 }
 
 .planvisit-teachers {
@@ -242,7 +242,7 @@ footer {
   background: url(images/luke-ellis-craven-400722-downsized-1580.jpg) top no-repeat;
 }
 
-.content-event-1-img {
+/* .content-event-1-img {
   background: url(images/Sheila-Widnall-MIT-Museum.jpg) cover no-repeat;
 }
 .content-event-2-img {
@@ -251,7 +251,7 @@ footer {
 
 .content-event-3-img {
   background: url(images/energetica-nazrin-babashova-iKjAj_oq-IE-unsplash-downsized-cropped-2000.jpg) cover no-repeat;
-}
+} */
 
 .home-whats-happening img,
 .about-us-content img,
