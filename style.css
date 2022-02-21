@@ -16,20 +16,13 @@
 }
 
 html {
-  font-size: 62.5%; /* 16px (default browser size)x 0,625 = 10px for easier rem calc*/
+  font-size: 62.5%; /* 16px(default browser size)x 0,625 = 10px for easier rem calculation */
 }
 
 body {
   background-color: var(--white);
   overflow-x: hidden;
 }
-
-/* .site {
-  PUT IN FOR TRANSITOIN OF NAV
-  overflow-x: hidden !important;
-  position: relative;
-  width: 100vw;
-}*/
 
 main {
   display: flex;
@@ -334,7 +327,7 @@ footer h2:first-child {
 }
 
 .button:hover {
-  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 5px var(--darkblue) /* ,0px 0px 0px 10px #fff*/;
+  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 5px var(--darkblue) /* ,0px 0px 0px 10px #fff  adds third border*/;
 }
 
 .welcome-text a {
@@ -486,7 +479,7 @@ header a {
   font-size: 1.866rem;
 }
 
-/* WHATS HAPPENING */
+/* WHATS HAPPENING ----------*/
 .content-padding {
   padding: 0 0 0 20px;
 }
@@ -518,7 +511,6 @@ header a {
 }
 
 /* MEDIA QUIRIES ---------- */
-
 @media (max-width: 319px) {
   h1,
   h2,
