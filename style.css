@@ -723,6 +723,7 @@ header a {
   }
 
   .nav-black-links a:hover {
+    display: inline;
     color: var(--darkblue);
   }
 
