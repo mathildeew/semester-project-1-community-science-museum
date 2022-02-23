@@ -206,32 +206,32 @@ footer {
 
 /* IMAGES ---------- */
 .exhib-1 {
-  background: url(images/brano-Mm1VIPqd0OA-unsplash-downsized-2330.jpg) no-repeat;
+  background: url(images/brano-Mm1VIPqd0OA-unsplash-downsized-2330.jpg) center/cover no-repeat;
 }
 .exhib-3 {
-  background: url(images/national-cancer-institute-L7en7Lb-Ovc-unsplash-downsized-2400.jpg) no-repeat;
+  background: url(images/national-cancer-institute-L7en7Lb-Ovc-unsplash-downsized-2400.jpg) center/cover no-repeat;
 }
 .exhib-4 {
-  background: url(images/nariman-mosharrafa-7VSQt-obpso-unsplash.-downsized-2100.jpg) center no-repeat;
+  background: url(images/nariman-mosharrafa-7VSQt-obpso-unsplash.-downsized-2100.jpg) center/cover no-repeat;
 }
 .exhib-2 {
-  background: url(images/nasa-rTZW4f02zY8-unsplash-downsized-2151.jpg) top no-repeat;
+  background: url(images/nasa-rTZW4f02zY8-unsplash-downsized-2151.jpg) top/cover no-repeat;
 }
 .exhib-5 {
-  background: url(images/possessed-photography-rDxP1tF3CmA-unsplash-2074.jpg) center no-repeat;
+  background: url(images/possessed-photography-rDxP1tF3CmA-unsplash-2074.jpg) center/cover no-repeat;
 }
 
 .planvisit-teachers {
-  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1600.jpg) bottom no-repeat;
+  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1600.jpg) bottom center/cover no-repeat;
 }
 .planvisit-foodanddrinks {
-  background: url(images/yu-kato-X9yeaqT8ONE-unsplash-downsized-1150.jpg) right no-repeat;
+  background: url(images/yu-kato-X9yeaqT8ONE-unsplash-downsized-1150.jpg) right center/cover no-repeat;
 }
 .planvisit-getintouch {
-  background: url(images/samuel-zeller-113381-downsized-1450.jpg) center center no-repeat;
+  background: url(images/samuel-zeller-113381-downsized-1450.jpg) center center/cover no-repeat;
 }
 .planvisit-location {
-  background: url(images/luke-ellis-craven-400722-downsized-1580.jpg) top no-repeat;
+  background: url(images/luke-ellis-craven-400722-downsized-1580.jpg) top/cover no-repeat;
 }
 
 .for-kids-img {
@@ -269,11 +269,6 @@ footer {
   margin: auto;
 }
 
-.planvisit-img,
-.exhib {
-  background-size: cover;
-}
-
 /* MAIN STYLE FOR ALL PAGES ----------*/
 .flex-column {
   display: flex;
@@ -284,6 +279,7 @@ footer {
 
 .width {
   width: 90%;
+  max-width: 900px;
 }
 
 .margin-bottom,
@@ -720,6 +716,14 @@ header a {
     width: 70%;
   }
 
+  .front-page-link {
+    transition: letter-spacing 0.2s ease-in-out;
+  }
+
+  .front-page-link:hover {
+    letter-spacing: 1rem;
+  }
+
   nav a:hover {
     color: var(--black);
   }
@@ -731,10 +735,6 @@ header a {
 
   span:nth-child(3) {
     letter-spacing: 5px;
-  }
-
-  header a:hover:not(.logo) {
-    letter-spacing: 1px;
   }
 
   .exhib:hover span:nth-child(3),
@@ -778,10 +778,6 @@ header a {
 }
 
 @media (min-width: 1100px) {
-  .width {
-    max-width: 900px;
-  }
-
   nav {
     display: contents;
     z-index: 0;
@@ -828,9 +824,12 @@ header a {
     color: var(--white);
   }
 
-  .header-green nav a:hover,
-  .header-green .nav-black-links a:hover {
+  .header-green nav a:hover {
     color: var(--white);
+  }
+
+  .header-green .nav-black-links a:hover {
+    color: var(--darkblue);
   }
 
   .bull,
