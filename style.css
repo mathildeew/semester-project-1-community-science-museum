@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: #f6fcff;
+  background-color: var(--white);
   overflow-x: hidden;
 }
 
