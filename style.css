@@ -1,5 +1,6 @@
 /* IMPORTS ---------- */
 @import url("https://use.typekit.net/cgv4asz.css");
+@import url("https://kit.fontawesome.com/831e6c6172.js");
 
 :root {
   --black: #000;
@@ -202,6 +203,11 @@ footer {
 
 .footer-content {
   margin: 30px auto;
+}
+
+footer a {
+  color: var(--black);
+  font-size: 1.5rem;
 }
 
 /* IMAGES ---------- */
@@ -440,7 +446,7 @@ header a {
 
 /* VISIT US ---------- */
 .visit-us-content a {
-  display: block;
+  font-size: 1.5rem;
 }
 
 /* EXHIBITIONS ---------- */
@@ -473,6 +479,11 @@ header a {
 .bottom-navigationbar a {
   color: var(--white);
   font-size: 1.866rem;
+}
+
+/* VISIT US ----------*/
+.visit-us-location i {
+  display: inline;
 }
 
 /* WHATS HAPPENING ----------*/
@@ -610,8 +621,7 @@ header a {
 
   .home-exhib,
   .content-event,
-  .about-us-contact p:nth-child(4),
-  footer h2:first-child {
+  .about-us-contact p:nth-child(4) {
     margin-bottom: 50px;
   }
 
@@ -773,7 +783,11 @@ header a {
   .footer-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+
+  footer h2 {
+    margin-top: 10px;
   }
 }
 
