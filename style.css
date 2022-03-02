@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: #f6fcff;
   overflow-x: hidden;
 }
 
@@ -761,6 +761,10 @@ header a {
   .home-events {
     width: 50%;
     height: 612px;
+  }
+
+  .home-events-content {
+    padding: 20px 5px;
   }
 
   .home-whats-happening-content hr {
