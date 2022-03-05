@@ -94,7 +94,7 @@ hr {
 /* NAVIGATION ---------- */
 .width-header {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1800px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -228,7 +228,7 @@ footer a {
 }
 
 .planvisit-teachers {
-  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1600.jpg) bottom center/cover no-repeat;
+  background: url(images/madalena-veloso-i4cNZ9INb3Y-unsplash-downsized-1650.jpg) bottom center/cover no-repeat;
 }
 .planvisit-foodanddrinks {
   background: url(images/yu-kato-X9yeaqT8ONE-unsplash-downsized-1150.jpg) right center/cover no-repeat;
@@ -487,6 +487,10 @@ header a {
 }
 
 /* WHATS HAPPENING ----------*/
+.whats-happening-content h3 {
+  font-size: 2.5rem;
+}
+
 .content-padding {
   padding: 0 0 0 20px;
 }
@@ -495,16 +499,11 @@ header a {
   margin-top: 0px;
 }
 
-.whats-happening-blue {
+.content-event {
   background-color: #c4f6ff;
 }
 
-.whats-happening-green {
-  background-color: #026b7e;
-}
-
 .dates {
-  text-transform: uppercase;
   padding-bottom: 30px;
 }
 
@@ -744,14 +743,16 @@ header a {
   }
 
   span:nth-child(3) {
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
   }
 
-  .exhib:hover span:nth-child(3),
+  .exhib:hover span:nth-child(3) {
+    letter-spacing: 1rem;
+  }
+
   .grid:hover a {
-    letter-spacing: 10px;
+    letter-spacing: 0.8rem;
   }
-
   .home-whats-happening-content {
     display: flex;
     flex-direction: row;
