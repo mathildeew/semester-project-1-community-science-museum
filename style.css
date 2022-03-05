@@ -62,6 +62,7 @@ h4 {
 h3 {
   font: 2rem "mixta-didone-alt";
   font-weight: 900;
+  letter-spacing: 0.045rem;
   text-transform: uppercase;
   margin: 10px auto;
 }
@@ -492,10 +493,6 @@ header a {
 }
 
 /* WHATS HAPPENING ----------*/
-.whats-happening-content h3 {
-  font-size: 2.5rem;
-}
-
 .content-padding {
   padding: 0 0 0 20px;
 }
@@ -565,6 +562,10 @@ header a {
   h1 {
     font-size: 4.5rem;
     margin-bottom: 50px;
+  }
+
+  .big-h2 h2 {
+    font-size: 4rem;
   }
 
   h2,
