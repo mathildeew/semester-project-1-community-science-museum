@@ -1,6 +1,5 @@
 /* IMPORTS ---------- */
 @import url("https://use.typekit.net/cgv4asz.css");
-@import url("https://kit.fontawesome.com/831e6c6172.js");
 
 :root {
   --black: #000;
@@ -54,7 +53,7 @@ h4 {
 }
 
 h3 {
-  font: 1.8rem "mixta-didone-alt";
+  font: 2rem "mixta-didone-alt";
   font-weight: 900;
   text-transform: uppercase;
   margin: 10px auto;
@@ -538,7 +537,7 @@ header a {
 
 @media (max-width: 767px) {
   .width {
-    max-width: 450px;
+    width: 70%;
   }
 
   .explore-img,
@@ -550,7 +549,6 @@ header a {
 @media (min-width: 768px) {
   .width {
     width: 80%;
-    max-width: 690px;
   }
 
   .margin-bottom {
@@ -563,11 +561,14 @@ header a {
   }
 
   h2,
-  h3,
   h4,
   p,
   a {
     font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
   }
 
   hr {
