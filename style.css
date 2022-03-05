@@ -284,7 +284,6 @@ footer a {
 
 .width {
   width: 90%;
-  max-width: 900px;
 }
 
 .margin-bottom,
@@ -537,7 +536,7 @@ header a {
 
 @media (max-width: 767px) {
   .width {
-    width: 70%;
+    max-width: 450px;
   }
 
   .explore-img,
@@ -549,6 +548,7 @@ header a {
 @media (min-width: 768px) {
   .width {
     width: 80%;
+    max-width: 900px;
   }
 
   .margin-bottom {
@@ -722,10 +722,6 @@ header a {
 }
 
 @media (min-width: 1024px) {
-  .width {
-    width: 70%;
-  }
-
   .front-page-link {
     transition: letter-spacing 0.2s ease-in-out;
   }
