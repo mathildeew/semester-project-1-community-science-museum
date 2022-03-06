@@ -832,12 +832,7 @@ header a {
     width: 100%;
   }
 
-  /* nav a:hover {
-    color: var(--black);
-  }
-
   .nav-black-links a:hover {
-    display: inline;
-    color: var(--darkblue);
-  } */
+    font-style: italic;
+  }
 }
