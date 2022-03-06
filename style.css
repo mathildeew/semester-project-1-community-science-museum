@@ -469,24 +469,6 @@ header a {
   font-size: 3rem;
 }
 
-.bottom-navigationbar {
-  color: var(--white);
-  background: var(--oceanblue);
-  width: 100vw;
-  height: 90px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: sticky;
-  bottom: 0;
-  display: none;
-}
-
-.bottom-navigationbar a {
-  color: var(--white);
-  font-size: 1.866rem;
-}
-
 /* VISIT US ----------*/
 .visit-us-location i {
   display: inline;
@@ -668,11 +650,6 @@ header a {
     font-size: 4rem;
   }
 
-  .bottom-navigationbar {
-    display: contents;
-    flex-direction: row;
-  }
-
   .content-padding {
     padding: 0 40px;
   }
@@ -734,12 +711,6 @@ header a {
     margin-bottom: 30px;
   }
 }
-
-/* @media (min-width: 936px) {
-  .visit-us-rows {
-    margin-bottom: 30px;
-  }
-} */
 
 @media (min-width: 1024px) {
   .front-page-link {
