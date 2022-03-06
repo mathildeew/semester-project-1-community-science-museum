@@ -4,7 +4,7 @@
 :root {
   --black: #000;
   --white: #fff;
-  --darkblue: #5f85fc;
+  --darkblue: #0d42e6;
   --oceanblue: #7ac2cd;
   --lightgreen: #8efe9f;
 }
@@ -248,7 +248,7 @@ footer a {
 }
 
 .for-kids-img {
-  background: url("images/samuel-zeller-158996-downsized-1800.jpg") center bottom/cover no-repeat;
+  background: url("images/samuel-zeller-158996-downsized-1800.jpg") center/cover no-repeat;
 }
 .for-teachers-img {
   background: url("images/bee-naturalles-IRM9qgZdlW0-unsplash-2692-downsized.jpg") center/cover no-repeat;
@@ -495,7 +495,7 @@ header a {
   font-weight: 700;
 }
 
-/* EXPLORE */
+/* EXPLORE ----------*/
 .explore-content a {
   color: var(--darkblue);
 }
@@ -523,11 +523,6 @@ header a {
 @media (max-width: 767px) {
   .width {
     max-width: 450px;
-  }
-
-  .explore-img,
-  .get-involved-img {
-    max-width: 300px;
   }
 }
 
@@ -693,17 +688,13 @@ header a {
     width: 50%;
   }
 
-  .for-kids-img {
-    background-position: bottom;
-  }
-
   .get-involved-img {
     width: 60%;
   }
 
   .explore-img,
   .get-involved-img {
-    height: 310px;
+    height: 360px;
   }
 
   .visit-us-content img {
@@ -719,15 +710,6 @@ header a {
 
   .front-page-link:hover {
     letter-spacing: 1rem;
-  }
-
-  nav a:hover {
-    color: var(--black);
-  }
-
-  .nav-black-links a:hover {
-    display: inline;
-    color: var(--darkblue);
   }
 
   span:nth-child(3) {
@@ -762,11 +744,6 @@ header a {
 
   .exhibitions-img {
     height: 500px;
-  }
-
-  .explore-img,
-  .get-involved-img {
-    height: 360px;
   }
 
   .exhibitions-img span {
@@ -816,27 +793,11 @@ header a {
 
   .nav-black-links {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
-  .header-green {
-    background-color: var(--black);
-  }
-
-  .header-green .logo {
-    color: var(--white);
-  }
-
-  .header-green .nav-black-links a {
-    color: var(--white);
-  }
-
-  .header-green nav a:hover {
-    color: var(--white);
-  }
-
-  .header-green .nav-black-links a:hover {
-    color: var(--darkblue);
+  .header-green nav a {
+    color: var(--black);
   }
 
   .bull,
@@ -844,4 +805,39 @@ header a {
   .hamburger span {
     display: none;
   }
+
+  a.hover-line {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .hover-line {
+    display: inline-block;
+    padding-bottom: 0.2px;
+    position: relative;
+  }
+
+  .hover-line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--black);
+    transition: width 0.3s ease-in-out;
+  }
+
+  .hover-line:hover::before {
+    width: 100%;
+  }
+
+  /* nav a:hover {
+    color: var(--black);
+  }
+
+  .nav-black-links a:hover {
+    display: inline;
+    color: var(--darkblue);
+  } */
 }
