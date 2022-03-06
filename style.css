@@ -5,8 +5,9 @@
   --black: #000;
   --white: #fff;
   --darkblue: #5f85fc;
-  --oceanblue: #7ac2cd;
   --lightgreen: #8efe9f;
+  --darkerblue: #026b7e;
+  --lightblue: #c4f6ff;
 }
 
 /* BASE STYLE ---------- */
@@ -83,7 +84,7 @@ p:not(.no-bottom-margin p) {
 }
 
 a {
-  color: #5f85fc;
+  color: var(--darkblue);
   font: 1.8rem "proxima-nova";
   font-weight: 700;
   letter-spacing: 0.08rem;
@@ -335,7 +336,7 @@ footer h2:first-child {
 }
 
 .button:hover {
-  box-shadow: 0px 0px 0px 2.5px #fff, 0px 0px 0px 5px var(--darkblue) /* ,0px 0px 0px 10px #fff  adds third border*/;
+  box-shadow: 0px 0px 0px 2.5px var(--white), 0px 0px 0px 5px var(--darkblue) /* ,0px 0px 0px 10px var(--white)  adds third border*/;
 }
 
 .welcome-text a {
@@ -400,21 +401,21 @@ header a {
 }
 
 .event-blue {
-  color: #026b7e;
-  background-color: #c4f6ff;
+  color: var(--darkerblue);
+  background-color: var(--lightblue);
 }
 
 .event-blue * {
-  color: #026b7e;
+  color: var(--darkerblue);
 }
 
 .event-green {
-  color: #c4f6ff;
-  background-color: #026b7e;
+  color: var(--lightblue);
+  background-color: var(--darkerblue);
 }
 
 .event-green * {
-  color: #c4f6ff;
+  color: var(--lightblue);
 }
 
 .home-events-content p:nth-child(3) {
@@ -484,7 +485,7 @@ header a {
 }
 
 .content-event {
-  background-color: #c4f6ff;
+  background-color: var(--lightblue);
 }
 
 .dates {
@@ -820,9 +821,9 @@ header a {
   .hover-line::before {
     content: "";
     position: absolute;
+    width: 0;
     left: 0;
     bottom: 0;
-    width: 0;
     height: 1.5px;
     background-color: var(--black);
     transition: width 0.3s ease-in-out;
