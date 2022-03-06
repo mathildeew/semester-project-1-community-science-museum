@@ -4,7 +4,7 @@
 :root {
   --black: #000;
   --white: #fff;
-  --darkblue: #0d42e6;
+  --darkblue: #5f85fc;
   --oceanblue: #7ac2cd;
   --lightgreen: #8efe9f;
 }
@@ -773,7 +773,7 @@ header a {
   }
 
   nav ul {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-right: auto;
   }
 
@@ -783,7 +783,7 @@ header a {
 
   nav a {
     margin-left: auto;
-    font-size: 1.5rem;
+    font-size: 1.86666rem;
     padding: 10px;
   }
 
@@ -796,19 +796,22 @@ header a {
     margin-top: 5px;
   }
 
-  .header-green nav a {
-    color: var(--black);
+  .header-green {
+    background-color: var(--black);
+  }
+
+  .header-green .logo {
+    color: var(--white);
+  }
+
+  .header-green .nav-black-links a {
+    color: var(--white);
   }
 
   .bull,
   .bigscreen-hide,
   .hamburger span {
     display: none;
-  }
-
-  a.hover-line {
-    color: inherit;
-    text-decoration: none;
   }
 
   .hover-line {
@@ -826,6 +829,10 @@ header a {
     height: 1.5px;
     background-color: var(--black);
     transition: width 0.3s ease-in-out;
+  }
+
+  .header-green .hover-line::before {
+    background: var(--darkblue);
   }
 
   .hover-line:hover::before {
