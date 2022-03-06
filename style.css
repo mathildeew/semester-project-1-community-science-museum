@@ -792,7 +792,6 @@ header a {
   }
 
   .nav-black-links {
-    display: block;
     margin-top: 5px;
   }
 
@@ -806,12 +805,6 @@ header a {
 
   .header-green .nav-black-links a {
     color: var(--white);
-  }
-
-  .bull,
-  .bigscreen-hide,
-  .hamburger span {
-    display: none;
   }
 
   .hover-line {
@@ -832,7 +825,7 @@ header a {
   }
 
   .header-green .hover-line::before {
-    background: var(--darkblue);
+    background: var(--white);
   }
 
   .hover-line:hover::before {
@@ -841,5 +834,11 @@ header a {
 
   .nav-black-links a:hover {
     font-style: italic;
+  }
+
+  .bull,
+  .bigscreen-hide,
+  .hamburger span {
+    display: none;
   }
 }
