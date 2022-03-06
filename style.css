@@ -551,7 +551,6 @@ header a {
 
 @media (min-width: 768px) {
   .width {
-    width: 80%;
     max-width: 900px;
   }
 
@@ -688,8 +687,10 @@ header a {
     gap: 20px;
   }
 
-  .clearfix {
-    display: flow-root;
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   .about-us-content img,
@@ -727,7 +728,18 @@ header a {
   .get-involved-img {
     height: 310px;
   }
+
+  .visit-us-content img {
+    min-width: 410px;
+    margin-bottom: 30px;
+  }
 }
+
+/* @media (min-width: 936px) {
+  .visit-us-rows {
+    margin-bottom: 30px;
+  }
+} */
 
 @media (min-width: 1024px) {
   .front-page-link {
