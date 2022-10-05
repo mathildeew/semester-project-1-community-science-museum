@@ -4,9 +4,9 @@
 
 ## Built with
 
-- [HTML]
-- [CSS]
+- HTML
+- CSS
 
 ## Contact
 
-[My portfolio](www.mathildeelinor.no)
+[My portfolio](https://www.mathildeelinor.no)
