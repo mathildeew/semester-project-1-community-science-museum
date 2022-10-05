@@ -1,7 +1,5 @@
 ## Community Science Museum - Semester Project 1
 
-![image](images/cms-screenshot.png)
-
 ## Description
 
 The brief for Semester Project 1 was to make an informative and engaging web site for a fictional musuem, called Community Science Museum. The target audiene is primary and middle school children (7-15) and families with young children. The goal was to build a site that is appealing to youngsters without pandering; it should take for granted that the audience is inquisitive and intelligent. It should also be responsive and easy to use on a variety of devices.
