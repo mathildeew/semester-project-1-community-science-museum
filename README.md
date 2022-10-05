@@ -2,7 +2,7 @@
 
 ## Description
 
-[Visit site](https://www.cms-oslo.netlify.app)
+[Visit site](https://cms-oslo.netlify.app)
 
 ## Built with
 
