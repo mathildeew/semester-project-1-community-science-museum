@@ -17,5 +17,5 @@ The brief for Semester Project 1 was to make an informative and engaging web sit
 
 ## Contact
 
-- [hei@mathildeelinor.no] (mailto:hei@mathildeelinor.no)
+- [hei@mathildeelinor.no](mailto:hei@mathildeelinor.no)
 - [Visit myportfolio](https://www.mathildeelinor.no)
